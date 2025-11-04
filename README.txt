@@ -13,6 +13,9 @@ A beautiful graphical interface for managing WiFi hotspots with real-time device
 2. Open terminal in the `hotspot-manager` directory
 3. Run: `./build-package.sh` to build the .deb package
 4. Then install using Method 1 above
+NOTE: BEFORE BUILDING TAKE NOTE THAT IN THE CODES THERE ARE MY ADAPTERS ["INTERNET_ADAPTER": "wlo1", 
+"HOTSPOT_ADAPTER": "wlx20235199be72"]
+SO CHANGE TO YOUR OWN ADAPTERS
 
 ## 🚀 Usage
 
