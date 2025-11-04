@@ -1,0 +1,5 @@
+#!/bin/bash
+# Hotspot Manager Launcher
+
+cd /usr/share/hotspot-manager
+python3 hotspot_manager.py "$@"

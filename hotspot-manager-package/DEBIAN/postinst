@@ -1,0 +1,25 @@
+#!/bin/bash
+# Post-installation script for hotspot-manager
+
+# Update desktop database
+update-desktop-database /usr/share/applications
+
+# Update icon cache for all icon themes
+for theme_dir in /usr/share/icons/*; do
+    if [ -f "$theme_dir/index.theme" ]; then
+        gtk-update-icon-cache -f -t "$theme_dir" 2>/dev/null || true
+    fi
+done
+
+# Also update pixmaps
+if [ -d /usr/share/pixmaps ]; then
+    update-icon-caches /usr/share/pixmaps 2>/dev/null || true
+fi
+
+# Set proper permissions for config
+if [ -f /etc/hotspot-manager/config.conf ]; then
+    chmod 644 /etc/hotspot-manager/config.conf
+fi
+
+echo "Hotspot Manager installed successfully!"
+echo "You can find it in your application menu under Network."

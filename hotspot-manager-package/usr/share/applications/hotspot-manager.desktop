@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hotspot Manager
+Comment=Manage your WiFi hotspot
+Exec=hotspot-manager
+Icon=hotspot-manager
+Categories=Network;
+Terminal=false
+StartupNotify=true
